@@ -1,5 +1,4 @@
 /.venv
 /.vscode
-/.gitignore
 /day0[1-9]/day*.txt
 /day1[0-2]/day*.txt
