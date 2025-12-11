@@ -1,6 +1,5 @@
 /.venv
 /.vscode
-/day01/day1.txt
-/day02/day2.txt
-/day02/divmod.py
-/day05/day5.txt
+/.gitignore
+/day0[1-9]/day*.txt
+/day1[0-2]/day*.txt
