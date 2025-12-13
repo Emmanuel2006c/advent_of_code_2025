@@ -1,1 +1,1 @@
-Persönliche Lösungen des advent-of-code-20205
+Persönliche Lösungen des advent-of-code-2025
