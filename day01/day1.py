@@ -3,7 +3,7 @@ import time,re
 def loadfile(file):
     c = []
     with open(file) as f:
-        for line in f.readlines():
+        for lines in f.readlines():
             c.append(((line[0]),int(line[1:])))
         return c
 
@@ -22,7 +22,7 @@ def solve(p,start):
             p2 += abs(rot) - 1
             pos = new_pos
             continue
-        if new_pos == 0 and rot > 0:
+        if new_pos == 0 and rot > 0: 
                 p2 += rot - 1
                 pos = new_pos
                 continue
