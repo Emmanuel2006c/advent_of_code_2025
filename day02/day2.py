@@ -6,10 +6,8 @@ def loadfile(file):
         idrange = {n[i] : n[i+1] for i in range(0,len(n),2)}
         return idrange
         
-       
-    
 def solve(ranges):
-    p1 = 0
+    p1 = p2 = 0
     for start,end in ranges.items():
 #print(f'Start:{start} - End:{end}') 
         for wert in range(start,end+1): 
@@ -17,9 +15,12 @@ def solve(ranges):
             l = len(w) 
             if l % 2 == 1: continue 
             h = l // 2 
-            if w[:h] == w[h:]: 
-                p1+= wert 
-    return p1
+            if w[:h] == w[h:]: p1+= wert 
+        for wert in range(start,end+1): 
+            w = str(wert) 
+            if re.findall(r'^(\d+)\1+$',w): p2 += wert
+    return p1,p2
+    
 
 
 
