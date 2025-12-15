@@ -7,11 +7,28 @@ def loadfile(file):
     return c
         
 def solve(p):
-    for e in p:
-        digits = [int(d) for d in e]
-        for d in digits:
-            while(i<len(e),i=0, i++):
-                curr = d[i]
+    x = 0
+    for banks in p:
+        joltages = [int(j) for j in banks]
+        l = len(str(banks))
+        i = joltages.index(max(joltages)) 
+        if i < l-1:
+            newj = joltages[i+1:] 
+            j = newj.index(max(newj))
+            print(f'{joltages[i]} + {joltages[i+j+1]}')
+            x += int(str(joltages[i]) + str(joltages[i+j+1]))
+        else:
+            newj = joltages.copy()
+            newj.pop(i)
+            j = newj.index(max(newj))
+            print(f'{joltages[j]} + {joltages[i]}')
+            x += int(str(joltages[j]) + str(joltages[i]))
+    return x
+
+
+
+        
+    
 
 
 
