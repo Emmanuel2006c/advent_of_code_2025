@@ -2,3 +2,4 @@
 /.vscode
 /day0[1-9]/day*.txt
 /day1[0-2]/day*.txt
+/advent_of_code_2025.code-workspace
