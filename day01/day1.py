@@ -22,7 +22,7 @@ def solve(p,start):
             p2 += abs(rot) - 1
             pos = new_pos
             continue
-        if new_pos == 0 and rot > 0: 
+        if new_pos == 0 and rot > 0:
                 p2 += rot - 1
                 pos = new_pos
                 continue

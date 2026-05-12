@@ -31,7 +31,6 @@ def solve(p):
         print(hexalophodnumbers) 
     return p1
 
-
 time_start = time.perf_counter()
 print(f"Solution: {solve(loadfile('day6.txt'))}")
 print(f"Thought for {time.perf_counter() - time_start:.6f} Seconds")
